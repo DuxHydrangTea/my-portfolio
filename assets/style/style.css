@@ -1,0 +1,35 @@
+.img-face-animation {
+  transform: translate(600px, 600px);
+  animation: face-animation 2s forwards;
+  animation-delay: 0.2s;
+  animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.slide-down {
+  animation: slide-down 1s forwards;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+@keyframes slide-down {
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes face-animation {
+  0% {
+    transform: translate(600px, 600px);
+    rotate: 15deg;
+  }
+  80% {
+    translate: translate(0, -5);
+    rotate: -5deg;
+  }
+
+  100% {
+    /* transform: rotate(360deg); */
+    transform: translate(0, 0);
+    rotate: 0deg;
+  }
+}
